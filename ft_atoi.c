@@ -6,7 +6,7 @@
 /*   By: bgilliea <bgilliea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 10:28:38 by bgilliea          #+#    #+#             */
-/*   Updated: 2022/10/24 11:23:06 by bgilliea         ###   ########.fr       */
+/*   Updated: 2022/11/14 16:45:11 by bgilliea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static int	to_int(char c, int nb)
 	return (nb);
 }
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	number;
 	int	i;
