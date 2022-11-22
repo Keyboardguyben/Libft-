@@ -6,13 +6,13 @@
 /*   By: bgilliea <bgilliea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 15:23:12 by bgilliea          #+#    #+#             */
-/*   Updated: 2022/11/14 10:53:44 by bgilliea         ###   ########.fr       */
+/*   Updated: 2022/11/18 10:29:59 by bgilliea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	freemoissa(char **pointer)
+static void	free_leftovers(char **pointer)
 {
 	int	i;
 
@@ -88,7 +88,7 @@ char	**ft_split(char *str, char c)
 		res[i] = get_next_word(&j, str, c);
 		if (res[i] == NULL)
 		{
-			freemoissa(res);
+			free_leftovers(res);
 			return (NULL);
 		}
 		i++;
@@ -96,18 +96,3 @@ char	**ft_split(char *str, char c)
 	res[i] = 0;
 	return (res);
 }
-
-/*
-#include <stdio.h>
-int main()
-{
-	int i;
-	char **split;
-	split = ft_split("Le suspense--est---insoutenable", 'p');
-	i = 0;
-	while(split[i])
-	{
-		printf("%s \n",split[i]);
-		i++;
-	}
-}*/

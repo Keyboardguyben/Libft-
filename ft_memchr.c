@@ -6,7 +6,7 @@
 /*   By: bgilliea <bgilliea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 15:10:46 by bgilliea          #+#    #+#             */
-/*   Updated: 2022/11/14 12:44:56 by bgilliea         ###   ########.fr       */
+/*   Updated: 2022/11/17 13:46:28 by bgilliea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,3 @@ char	*ft_memchr(const void *str, int c, size_t n)
 	}
 	return (NULL);
 }
-
-/*
-#include <string.h>
-#include <stdio.h>
-
-int main()
-{
-	printf("%s \n",ft_memchr("Une grosse palourde",'l',30));
-	printf("%s",memchr("Une grosse palourde",'l',30));
-}*/

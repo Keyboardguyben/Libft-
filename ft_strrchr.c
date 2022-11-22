@@ -6,12 +6,12 @@
 /*   By: bgilliea <bgilliea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 13:13:03 by bgilliea          #+#    #+#             */
-/*   Updated: 2022/11/14 12:44:14 by bgilliea         ###   ########.fr       */
+/*   Updated: 2022/11/14 17:16:31 by bgilliea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//retourne derniere occurence du caractere
+
 char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
@@ -27,12 +27,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
-/*#include <string.h>
-#include <stdio.h>
-
-int main()
-{
-	printf("%s \n",ft_strrchr("Une grosse palourde",'o'));
-	printf("%s",strrchr("Une grosse palourde",'o'));
-}*/

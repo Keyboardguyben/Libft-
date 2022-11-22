@@ -6,7 +6,7 @@
 /*   By: bgilliea <bgilliea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 15:37:13 by bgilliea          #+#    #+#             */
-/*   Updated: 2022/11/08 16:08:32 by bgilliea         ###   ########.fr       */
+/*   Updated: 2022/11/21 10:45:56 by bgilliea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,13 +35,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ret[i] = '\0';
 	return (ret);
 }
-
-/*
-#include <stdio.h>
-
-int main()
-{
-	char *s = "bonjour mon cher cacamarade";
-	printf("%s",ft_substr(s, 17, 4));
-}
-*/

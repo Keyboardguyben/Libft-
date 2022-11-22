@@ -6,7 +6,7 @@
 /*   By: bgilliea <bgilliea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 12:02:22 by bgilliea          #+#    #+#             */
-/*   Updated: 2022/11/08 11:24:18 by bgilliea         ###   ########.fr       */
+/*   Updated: 2022/11/22 14:39:49 by bgilliea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	start;
 	size_t	end;
 
+	if (!s1)
+		return (NULL);
+	if (!set)
+		return (ft_strdup(s1));
 	start = 0;
 	end = ft_strlen(s1);
 	while (s1[start] && ft_char_in_set(s1[start], set))
@@ -48,12 +52,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ret[i] = 0;
 	return (ret);
 }
-
-/*
-#include <stdio.h>
-int main()
-{
-	char *s = "";
-
-	printf("%s ",ft_strtrim(s,""));
-}*/

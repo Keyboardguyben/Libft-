@@ -6,7 +6,7 @@
 /*   By: bgilliea <bgilliea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 15:41:40 by bgilliea          #+#    #+#             */
-/*   Updated: 2022/10/21 12:11:41 by bgilliea         ###   ########.fr       */
+/*   Updated: 2022/11/14 17:16:45 by bgilliea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,20 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	ret[i] = '\0';
 	return (ret);
 }
-
-/*
-char	ft_bobelino(unsigned int i, char c)
-{
-	char str;
-	str = c + 1;
-	return (str);
-}
-
-#include <stdio.h>
-
-int main(void)
-{
-	char *str = "bob le vaillant bonhomme";
-	printf("%s",ft_strmapi(str,*ft_bobelino));
-}
-*/

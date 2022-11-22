@@ -6,7 +6,7 @@
 /*   By: bgilliea <bgilliea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 11:32:11 by bgilliea          #+#    #+#             */
-/*   Updated: 2022/11/14 16:50:05 by bgilliea         ###   ########.fr       */
+/*   Updated: 2022/11/14 17:16:04 by bgilliea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,3 @@ int	ft_tolower(int c)
 		c = c + 32 ;
 	return (c);
 }
-
-/*int main()
-{
-    char c = 'A';
-    c = ft_tolower(c);
-	printf("%c",c);
-}*/

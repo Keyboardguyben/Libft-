@@ -6,11 +6,13 @@
 /*   By: bgilliea <bgilliea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 10:28:38 by bgilliea          #+#    #+#             */
-/*   Updated: 2022/11/14 16:45:11 by bgilliea         ###   ########.fr       */
+/*   Updated: 2022/11/21 11:43:05 by bgilliea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-static int	to_int(char c, int nb)
+#include "libft.h"
+
+static long	to_int(char c, long nb)
 {
 	int	i;
 
@@ -22,9 +24,10 @@ static int	to_int(char c, int nb)
 
 int	ft_atoi(const char *str)
 {
-	int	number;
-	int	i;
-	int	sign;
+	long				number;
+	int					i;
+	int					sign;
+	unsigned long long	save;
 
 	i = 0;
 	number = 0;
@@ -33,16 +36,17 @@ int	ft_atoi(const char *str)
 		i++;
 	if (str[i] == '-' || str[i] == '+')
 	{
-		if (str[i] == '-')
+		if (str[i++] == '-')
 			sign *= -1;
-		i++;
 	}
 	if (str[i] < 48 || str[i] > 57)
 		return (0);
 	while ((str[i] >= 48 && str[i] <= 57))
-	{
-		number = to_int(str[i], number);
-		i++;
+	{	
+		number = to_int(str[i++], number);
+		save = number;
+		if (save > 9223372036854775807)
+			return (-1 * (sign > 0));
 	}
 	return (number * sign);
 }
@@ -51,7 +55,7 @@ int	ft_atoi(const char *str)
 #include <stdlib.h>
 int main(void)
 {
-	char num[] = "	+000453rr234";
+	char num[] = "922337203685755558072";
 	printf("%d \n",ft_atoi(num));
 	printf("%d",atoi(num));
 }*/

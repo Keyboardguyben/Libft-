@@ -6,7 +6,7 @@
 /*   By: bgilliea <bgilliea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 10:24:18 by bgilliea          #+#    #+#             */
-/*   Updated: 2022/11/14 10:08:31 by bgilliea         ###   ########.fr       */
+/*   Updated: 2022/11/14 17:16:58 by bgilliea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,16 +30,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		i++;
 	return (i);
 }
-
-/* #include <stdio.h>
-#include <string.h>
-
-int main () 
-{
-    // char str[] = "J'achete une huitre";
-    // char strb[] = "il loue le canard";
-	char *dest = "";
-
-    printf("%lu \n",ft_strlcpy(dest, "aaa", 3));
-    printf("%lu",strlcpy(dest, "aaa", 3)); 
- } */

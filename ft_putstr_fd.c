@@ -6,7 +6,7 @@
 /*   By: bgilliea <bgilliea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 10:38:39 by bgilliea          #+#    #+#             */
-/*   Updated: 2022/11/04 11:23:40 by bgilliea         ###   ########.fr       */
+/*   Updated: 2022/11/18 14:17:57 by bgilliea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	write(fd, s, ft_strlen(s));
+	if (s)
+	{
+		write(fd, s, ft_strlen(s));
+	}
 }

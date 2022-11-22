@@ -6,7 +6,7 @@
 /*   By: bgilliea <bgilliea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 10:58:02 by bgilliea          #+#    #+#             */
-/*   Updated: 2022/11/07 09:43:02 by bgilliea         ###   ########.fr       */
+/*   Updated: 2022/11/18 15:45:26 by bgilliea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		return ;
 	while (lst)
 	{
-		f (lst->content);
+		f(lst->content);
 		lst = lst->next;
 	}
 }

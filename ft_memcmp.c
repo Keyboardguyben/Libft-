@@ -6,7 +6,7 @@
 /*   By: bgilliea <bgilliea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 11:31:16 by bgilliea          #+#    #+#             */
-/*   Updated: 2022/11/07 13:12:21 by bgilliea         ###   ########.fr       */
+/*   Updated: 2022/11/17 13:37:37 by bgilliea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ int	ft_memcmp(const void *str, const void *str2, size_t n)
 	}
 	return (0);
 }
-
-/*
-#include <string.h>
-#include <stdio.h>
-
-int main()
-{
-	printf("%d \n",ft_memcmp("Une grosse pzlourde","Une grosse poubelle",20));
-	printf("%d",memcmp("Une grosse pzlourde","Une grosse poubelle",20));
-}
-*/

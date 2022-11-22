@@ -6,11 +6,11 @@
 /*   By: bgilliea <bgilliea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 10:13:39 by bgilliea          #+#    #+#             */
-/*   Updated: 2022/11/04 15:42:38 by bgilliea         ###   ########.fr       */
+/*   Updated: 2022/11/17 13:37:32 by bgilliea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

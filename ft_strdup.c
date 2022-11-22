@@ -6,7 +6,7 @@
 /*   By: bgilliea <bgilliea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 11:13:12 by bgilliea          #+#    #+#             */
-/*   Updated: 2022/10/13 14:41:34 by bgilliea         ###   ########.fr       */
+/*   Updated: 2022/11/14 17:17:14 by bgilliea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,3 @@ char	*ft_strdup(const char *src)
 	ft_strlcpy(dst, src, l);
 	return (dst);
 }
-
-/*#include <stdio.h>
-int main()
-{
-	char src[] = "Lol il parle";
-	char *dst = ft_strdup(src);
-
-	printf("%s",dst);
-}*/
